@@ -1,0 +1,14 @@
+spring.cache.type: none
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.PostgresSQLDialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  init:
+    mode: always
+  datasource:
+    url: jdbc:postgresql://localhost:5433/jira-test
+    username: jira
+    password: CodeGymJira
+    driver-class-name: org.postgresql.Driver
